@@ -3,11 +3,20 @@
 [Ionoid IoT Platform](https://ionoid.io/) supports simple IoT Apps that can run on any Linux and
 integrated with Ionoid.
 
-Ionoid IoT Apps take [Snapcraft](https://docs.snapcraft.io/) the universal
-app store for Linux as a reference, and build on top of it.
+## Summary
 
-Ionoid IoT Apps also will support [Docker](https://docker.com) Apps in
-future.
+Ionoid IoT Apps support multiple format:
+
+* [Tarballs or Compressed
+Apps](https://en.wikipedia.org/wiki/Tar_(computing)) Apps as **.tar** files are
+common files supported by nearly any existing computer.
+
+* [Snapcraft](https://docs.snapcraft.io/) the universal
+app store for Linux. Actually Ionoid IoT takes it as a reference and
+builds on top of it.
+
+* [Docker](https://docker.com) Apps, in the near future Ionoid IoT Will
+also support Docker Apps Images.
 
 
 ## Chapters
