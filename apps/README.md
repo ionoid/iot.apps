@@ -1,10 +1,13 @@
 # Ionoid IoT Apps Format
 
-Ionoid IoT Platform supports simple IoT Apps that can run on any Linux and
+[Ionoid IoT Platform](https://ionoid.io/) supports simple IoT Apps that can run on any Linux and
 integrated with Ionoid.
 
 Ionoid IoT Apps take [Snapcraft](https://docs.snapcraft.io/) the universal
 app store for Linux as a reference, and build on top of it.
+
+Ionoid IoT Apps also will support [Docker](https://docker.com) Apps in
+future.
 
 
 ## Chapters
@@ -43,7 +46,7 @@ World](https://console.cloud.google.com/storage/browser/public.opendevices.io/ap
 [Hellow World IoT App Example:](https://console.cloud.google.com/storage/browser/public.opendevices.io/apps)
 
 ```
-* app.yaml      : App Basic information.
+* app.yaml      : App Basic information (Required).
 
 * meta/         : Meta directory that contains extra App metadata (Optional).
 
@@ -63,16 +66,17 @@ information:
 
 (the `#` beginnig means this line is a comment)
 
-```
+```yaml
 # Name of APP must be Alphanumeric and can contain the following
 # special characters "_", "." and "-".
 # Minimum 2 charactes, up to 64 characters.
+# Required *
 name: appname
 
-# Version of App
+# Version of App  (Optional)
 version: 1.0
 
-# Description of App
+# Description of App  (Optional)
 description: My App
 
 # List of Applications inside the same IoT App, the final IoT
@@ -88,7 +92,7 @@ apps:
 
 
 # Health check special command to do health checking on your
-# one or multiple apps
+# one or multiple apps. (Optional)
 health-check:
                 command:        /bin/health-check
 ```
